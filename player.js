@@ -72,10 +72,12 @@ function Player(x, y) {
 						this.yspeed = 0;
 						this.accel = 0;
 						this.y = blocks[i].y - this.w / 2;
+						break;
 					}
 				} else if (this.y - this.w / 2 + ver < blocks[i].y + blocks[i].h) {
 					this.y = blocks[i].y + blocks[i].h + this.w / 2;
 					this.yspeed = 0;
+					break;
 				}
 			}
 		}
