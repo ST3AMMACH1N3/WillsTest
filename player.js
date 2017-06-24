@@ -11,10 +11,15 @@ function Player(x, y) {
 		this.y += this.yspeed;
 		this.fall(this.yspeed);
 		if (keyIsDown(65)) {
-			this.move(-5)
+			this.move(-5);
 		}
 		if (keyIsDown(68)) {
-			this.move(5)
+			this.move(5);
+		}
+		
+		if (this.y > height) {
+			this.x = 108;
+			this.y = 400;
 		}
 	}
 	
