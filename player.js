@@ -36,7 +36,7 @@ function Player(x, y) {
 	}
 	
 	this.jump = function() {
-		this.yspeed = -12;
+		this.yspeed = -8;
 	}
 	
 	this.move = function(hor) {
