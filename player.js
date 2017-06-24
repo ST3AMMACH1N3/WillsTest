@@ -65,7 +65,7 @@ function Player(x, y) {
 	this.fall = function(ver) {
 		var canFall = true;
 		for (var i = 0; i < blocks.length; i++) {
-			if (this.x + this.w / 2 >= blocks[i].x && this.x - this.w / 2 <= blocks[i].x + blocks[i].w) {
+			if (this.x + this.w / 2 > blocks[i].x && this.x - this.w / 2 < blocks[i].x + blocks[i].w) {
 				if (this.y < blocks[i].y) {
 					if (this.y + this.w / 2 + ver >= blocks[i].y) {
 						canFall = false;
